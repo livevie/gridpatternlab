@@ -1,4 +1,4 @@
-const support = ['Float', 'Flexbox', 'Grid'];
+const support = ['IE10+, Firefox 2+, Chrome 1+, Edge 12, Safari 3.1', 'IE11+, Firefox 22+, Chrome 29+, Edge 12, Safari 9', 'Firefox 52+, Chrome 57+, Edge 16+, Safari 10.1'];
 const css = `body {
   background: #fff;
 }
