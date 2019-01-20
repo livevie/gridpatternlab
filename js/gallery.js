@@ -4,14 +4,15 @@ const css = `body {
 }
 
 .gallery {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
     /* support2 */
     display: flex;
     flex-wrap: wrap;
     /* endsupport2 */
+    
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
 }
 
 /* support2 */
@@ -23,6 +24,14 @@ const css = `body {
     /* support1 */
     float: left;
     /* endsupport1 */
+}
+
+@supports (display: grid) {
+    .photo {
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
 }
 /* endsupport2 */
 
