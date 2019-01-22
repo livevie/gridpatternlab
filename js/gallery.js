@@ -48,8 +48,9 @@ const css = `body {
 
 // Supporttext Ausgabeelement
 const support_text = document.querySelector('.js-support');
-// Per default float-Support festlegen
-support_text.textContent = support[0];
+// Slider
+const support_slider = document.querySelector('.js-support-selection');
+
 
 function trim_comments(string) {
     // Regex um Kommentare zu entfernen
@@ -66,31 +67,34 @@ function trim_comments(string) {
 }
 
 // CSS ohne Kommentare anzeigen
-document.querySelector('.js-css').innerHTML = trim_comments(css);
-
-console.log(css.replace(trim_comments, ""))
-
-// Wenn der Regler bewegt wird
-document.querySelector('input').addEventListener('change', e => {
-    // Wert zu integer umwandeln
-    const num = parseInt(e.target.value);
-
-    // Supporttext Ausgabe aktualisieren
-    support_text.textContent = support[num - 1];
-
-    // CSS string zwischenspeichern
-    let string = css;
-
+function displayCSS(string, support) {
     // CSS ohne Kommentare anzeigen
     document.querySelector('.js-css').innerHTML = trim_comments(string);
 
     // Kommentare durchgehen
-    for (var i = 1; i < num; i++) {
+    for (var i = 1; i < parseInt(support); i++) {
         // Alles zwischen /* supportN */ und /* endsupportN */ lesen und inklusive Kommentar entfernen
         let remove = new RegExp(`\\/\\* support${i} \\*\\/(\[\\s\\S\]*?)\\/\\* endsupport${i} \\*\\/`, "g");
         string = string.replace(remove, "");
         // CSS ohne Kommentare anzeigen
         document.querySelector('.js-css').innerHTML = trim_comments(string);
     }
+}
+
+function displaySupport(index) {
+    support_text.textContent = support[index - 1];
+}
+
+// Per default Grid-Support festlegen
+displaySupport(support_slider.value);
+displayCSS(css, support_slider.value);
+
+// Wenn der Regler bewegt wird
+support_slider.addEventListener('change', e => {
+    const support = e.target.value;
+
+    displaySupport(support);
+
+    displayCSS(css, support);
 });
 
