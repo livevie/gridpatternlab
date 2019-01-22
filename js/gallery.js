@@ -56,13 +56,13 @@ function trim_comments(string) {
     // Kommentare entfernen
     const trim_comments = new RegExp(`\\/\\*(.\[\\s\\S\]*?)\\*\\/(\r\n|\n|\r)|`, "g");
     let css_no_coment = string.replace(trim_comments, "");
-    // Überschüssiges Leerzeichen entfernen
-    css_no_coment = css_no_coment.replace(new RegExp(`  +`, "gs"),"  ");
-    // Leerzeichen vor Klammern entfernen
-    css_no_coment = css_no_coment.replace(new RegExp(` +}`, "gs"),"}");
-    css_no_coment = css_no_coment.replace(new RegExp(`  +\n}`, "gs"),"}");
-
-    return css_no_coment.trimEnd();
+    // CSS formatieren
+    var beautified = cssbeautify(css_no_coment, {
+        indent: '  ',
+        autosemicolon: true
+    });
+    
+    return beautified.trimEnd();
 }
 
 // CSS ohne Kommentare anzeigen
@@ -87,7 +87,7 @@ document.querySelector('input').addEventListener('change', e => {
     // Kommentare durchgehen
     for (var i = 1; i < num; i++) {
         // Alles zwischen /* supportN */ und /* endsupportN */ lesen und inklusive Kommentar entfernen
-        let remove = new RegExp(`\\/\\* support${i} \\*\\/(.\[\\s\\S\]*?)\\/\\* endsupport${i} \\*\\/`, "sg");
+        let remove = new RegExp(`\\/\\* support${i} \\*\\/(\[\\s\\S\]*?)\\/\\* endsupport${i} \\*\\/`, "g");
         string = string.replace(remove, "");
         // CSS ohne Kommentare anzeigen
         document.querySelector('.js-css').innerHTML = trim_comments(string);
