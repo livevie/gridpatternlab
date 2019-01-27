@@ -279,6 +279,68 @@ input[type="range"]::-webkit-slider-thumb {
     white-space: pre-wrap;
 }
 
+/*JS Support Toggle*/
+
+.js-support-toggle {
+    margin-bottom: 2rem;
+}
+
+.js-support-toggle p {
+    margin-bottom: 15px;
+}
+
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type=radio] + label {
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+input[type=radio] + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: lightgrey;
+}
+
+input[type=radio]:hover + label:before {
+    background: lightblue;
+}
+
+input[type=radio]:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=radio]:checked + label:before {
+    background: #2A648D;
+}
+
+input[type=radio]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+    transform: rotate(45deg);
+}
+
 
 /*Gallery*/
 .photo {

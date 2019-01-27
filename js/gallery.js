@@ -42,7 +42,6 @@ const css = `body {
       width: 250px;
       height: 200px;
       margin: 10px;
-      flex-grow: 1;
   }
   /* enduntil2 */
   
@@ -145,7 +144,7 @@ if (document.querySelector('.js-css-rendered')) {
         const box = document.createElement('input');
         const box_label = document.createElement('label');
 
-        box.setAttribute('type', 'checkbox');
+        box.setAttribute('type', 'radio');
         box.id = 'support_toggle' + i;
         box.name = 'support_toggle';
         box.value = i + 1;
