@@ -219,6 +219,36 @@ h2 {
     }
 }
 
+/*Landingpage Content Boxes*/
+
+.section__landing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.description__landing {
+    margin-top: 2rem;
+}
+
+.component_box {
+    color: #000;
+    background-color: #EAF1EE;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #bed1d1;
+    transition: all 0.2s;
+}
+
+.component_box:hover {
+    background-color: #fff;
+}
+
+.component_box:visited {
+    color: #1F5680;
+}
+
 /*Support Range*/
 
 .support {
@@ -269,7 +299,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /*Contenteditable*/
-.js-css {
+.css {
     display: block;
     background: #333;
     color: #FFF;
@@ -277,6 +307,68 @@ input[type="range"]::-webkit-slider-thumb {
     margin: 2rem 0;
     font-family: "Courier New", monospace;
     white-space: pre-wrap;
+}
+
+/*JS Support Toggle*/
+
+.js-support-toggle {
+    margin-bottom: 2rem;
+}
+
+.js-support-toggle p {
+    margin-bottom: 15px;
+}
+
+input[type=radio] {
+    position: absolute;
+    opacity: 0;
+}
+
+input[type=radio] + label {
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+}
+
+input[type=radio] + label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: lightgrey;
+}
+
+input[type=radio]:hover + label:before {
+    background: lightblue;
+}
+
+input[type=radio]:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+}
+
+input[type=radio]:checked + label:before {
+    background: #2A648D;
+}
+
+input[type=radio]:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow:
+            2px 0 0 white,
+            4px 0 0 white,
+            4px -2px 0 white,
+            4px -4px 0 white,
+            4px -6px 0 white,
+            4px -8px 0 white;
+    transform: rotate(45deg);
 }
 
 
