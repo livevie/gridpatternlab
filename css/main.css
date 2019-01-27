@@ -53,6 +53,13 @@ h2 {
     }
 }
 
+.note {
+    background-color: indianred;
+    padding: 20px;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
 /*Header*/
 
 .header {
