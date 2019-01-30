@@ -385,6 +385,12 @@ input[type=radio]:checked + label:after {
     background-size: cover;
 }
 
+/*Wrapper*/
+.wrapper {
+    background-color: #1F5680;
+    color: white;
+}
+
 /*Footer*/
 
 .footer {
