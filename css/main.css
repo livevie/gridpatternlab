@@ -391,6 +391,16 @@ input[type=radio]:checked + label:after {
     color: white;
 }
 
+/*Column as wide as widest child*/
+
+.description-list > span {
+    border: 1px dotted #1F5680;
+}
+
+.description-list > span:nth-child(odd) {
+    color: #1F5680;
+}
+
 /*Footer*/
 
 .footer {
