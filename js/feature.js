@@ -17,8 +17,8 @@ const css = `body {
       /* only3 */
       display: grid;
       grid-template-columns: min-content 1fr;
-      grid-row-gap: 15px;
       grid-column-gap: 20px;
+      grid-row-gap: 5px;
       /* endonly3 */
   }
   /* enduntil3 */
@@ -40,17 +40,14 @@ const css = `body {
       /* only1 */
       display: inline-block;
       /* endonly1 */
-      margin-left: 10px;
+      margin-left: 15px;
       vertical-align: middle;
     }
      /* enduntil2 */
      
      /* until2 */
      .feature__text {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-left: 50px;
-        margin-right: 0px;
+        margin: 0 0 0 50px;
        }
      /* enduntil2 */
 
