@@ -3,56 +3,54 @@ const support = [
     'IE11+, Firefox 22+, Chrome 29+, Edge 12, Safari 9',
     'Firefox 52+, Chrome 57+, Edge 16+, Safari 10.1'
 ];
-const css = `body {
-    background: #fff;
-  } 
-      .article {
-      /* only2 */
-        display: flex;
-        justify-content: space-between;
-      /* endonly2 */
-      /* only3 */
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-      /* endonly3 */
-      }
-      
-      /* only1 */
-      .article::after {
-          content: "";
-          display: block;
-          clear: both;
-          visibility: hidden;
-          height: 0;
-      }
-      /* endonly1 */
-      
-      .article__media {
-      /* only1 */
-      float: left;
-      /* endonly1 */
-      /* until2 */
-        width: 45%;
-      /* enduntil2 */
-      /* only3 */
-        grid-column: 1 / 7;
-      /* endonly3 */
-      }
-
-      .article__text {
-      /* only1 */
-      float: right;
-      /* endonly1 */
-      /* until2 */
-        width: 45%;
-      /* enduntil2 */
-      /* only3 */
-        grid-column: 8 / -1;
-      /* endonly3 */
-      }
-      
-      img {
-        width: 100%;
-        height: auto;
-      }
+const css = `
+        .article {
+        /* only2 */
+            display: flex;
+            justify-content: space-between;
+        /* endonly2 */
+        /* only3 */
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        /* endonly3 */
+        }
+        
+        /* only1 */
+        .article::after {
+            content: "";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            height: 0;
+        }
+        /* endonly1 */
+        
+        .article__media {
+        /* only1 */
+            float: left;
+        /* endonly1 */
+        /* until2 */
+            width: 45%;
+        /* enduntil2 */
+        /* only3 */
+            grid-column: 1 / 7;
+        /* endonly3 */
+        }
+        
+        .article__text {
+        /* only1 */
+            float: right;
+        /* endonly1 */
+        /* until2 */
+            width: 45%;
+        /* enduntil2 */
+        /* only3 */
+            grid-column: 8 / -1;
+        /* endonly3 */
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
 `;
