@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/main.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <title>Component | Feature Box</title>
+    <title>Component | Wrapper</title>
 </head>
 <body>
 
@@ -22,8 +22,8 @@
         </nav>
         <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary--main">component/feature box</span>
-                <span class="heading-primary--sub">Responsive feature boxes</span>
+                <span class="heading-primary--main">component/aspect ratio boxes</span>
+                <span class="heading-primary--sub">Aspect ratio box layout</span>
             </h1>
         </div>
     </div>
@@ -48,19 +48,18 @@
         <div class="css js-css-display"></div>
 
         <h2>Component</h2>
+
+        <div class="note">Note: This behaviour is only possible with css grid without changing the HTML Markup or using JavaScript.</div>
+
         <div class="js-support-toggle">
             <p>Toggle the checkboxes to see how the component looks like in …</p>
         </div>
 
-        <div class="feature">
-            <svg class="feature__icon"><use xlink:href="#icon-location"></use><defs><symbol id="icon-location" viewBox="0 0 32 32">
-                <title>location</title>
-                <path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z"></path>
-            </symbol>
-            </defs>
-            </svg>
-            <h4 class="heading">Feature Section</h4>
-            <p class="feature__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio necessitatibus pariatur voluptatibus.</p>
+        <div class="container">
+            <div class="item item--lg">1</div>
+            <div class="item item--sm">2</div>
+            <div class="item item--sm">3</div>
+            <div class="item item--db">4</div>
         </div>
 
         <style class="js-css-rendered"></style>
@@ -84,7 +83,7 @@
     </div>
 </footer>
 <script src="js/cssbeautify.js"></script>
-<script src="js/feature.js"></script>
+<script src="js/aspectratio.js"></script>
 <script src="js/renderComponent.js"></script>
 </body>
 </html>

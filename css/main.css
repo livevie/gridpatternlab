@@ -238,8 +238,8 @@ h2 {
     margin-top: 2rem;
 }
 
-.component_box {
-    color: #000;
+.component_box, .component_box:link, .component_box:visited {
+    color: #0F3458;
     background-color: #EAF1EE;
     width: 100%;
     padding: 20px;
@@ -250,10 +250,6 @@ h2 {
 
 .component_box:hover {
     background-color: #fff;
-}
-
-.component_box:visited {
-    color: #1F5680;
 }
 
 /*Support Range*/
@@ -399,6 +395,33 @@ input[type=radio]:checked + label:after {
 
 .description-list > span:nth-child(odd) {
     color: #1F5680;
+}
+
+/*Aspect Ratio Box */
+
+.item {
+    padding: 20px;
+    color: white;
+}
+
+.item--sm {
+    background-image: url(https://source.unsplash.com/UCIZh0-OYPw);
+    background-size: cover;
+}
+
+.item--sm:nth-child(2) {
+    background-image: url(https://source.unsplash.com/Ic0q_M542Is);
+    background-size: cover;
+}
+
+.item--lg {
+    background-image: url(https://source.unsplash.com/U_D5NWMmTTM);
+    background-size: cover;
+}
+
+.item--db {
+    background-image: url(https://source.unsplash.com/uCTlqRpsv5c);
+    background-size: cover;
 }
 
 /*Footer*/

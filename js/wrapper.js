@@ -17,7 +17,7 @@ const css = `body {
       /* enduntil2 */
       /* only3 */
       display: grid;
-      grid-template-columns: 1fr [content] minmax(auto, 960) 1fr;
+      grid-template-columns: 1fr [content] minmax(auto, 960px) 1fr;
       /* endonly3 */
       }
       
