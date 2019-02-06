@@ -4,7 +4,7 @@ const support = [
     'Firefox 52+, Chrome 57+, Edge 16+, Safari 10.1'
 ];
 const css = `
-        .multicolum__elements {
+        .multicolumn__elements {
         /* only2 */
             display: flex;
             flex-wrap: wrap;
@@ -18,7 +18,7 @@ const css = `
         }
         
         /* only1 */
-        .multicolum__elements::after {
+        .multicolumn__elements::after {
             content: "";
             display: block;
             clear: both;

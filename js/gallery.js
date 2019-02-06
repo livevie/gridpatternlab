@@ -39,7 +39,6 @@ const css = `
             width: 250px;
             height: 200px;
             margin: 10px;
-            flex-grow: 1;
         }
         /* enduntil2 */
         

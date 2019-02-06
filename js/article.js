@@ -12,6 +12,7 @@ const css = `
         /* only3 */
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            grid-gap: 40px;
         /* endonly3 */
         }
         
@@ -30,10 +31,10 @@ const css = `
             float: left;
         /* endonly1 */
         /* until2 */
-            width: 45%;
+            width: 49%;
         /* enduntil2 */
         /* only3 */
-            grid-column: 1 / 7;
+            grid-column: span 6;
         /* endonly3 */
         }
         
@@ -42,10 +43,10 @@ const css = `
             float: right;
         /* endonly1 */
         /* until2 */
-            width: 45%;
+            width: 49%;
         /* enduntil2 */
         /* only3 */
-            grid-column: 8 / -1;
+            grid-column: span 6;
         /* endonly3 */
         }
         

@@ -29,41 +29,36 @@ const css = `
         }
         /* endonly1 */
         
-        /* until2 */
-        .item--sm {
-            width: 285px;
-            height: 300px;
         /* only1 */
-            float: right;
-            margin-left: 20px;
+        .container::after {
+            content: "";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            height: 0;
+        }
         /* endonly1 */
+        
+        /* until2 */
+        .item {
+            width: 49%;
+            height: 620px;
+            margin-bottom: 20px;
+            /* only1 */
+            float: left;
+            margin-right: 10px;
+            /* endonly1 */
         }
         /* enduntil2 */
         
-        .item--lg {
-        /* only1 */
-            float: left;
-        /* endonly1 */
-        /* until2 */
-            width: 590px;
-            height: 620px;
-        /* enduntil2 */
+        .item__lg {
         /* only3 */
             grid-column: span 2;
             grid-row: span 2;
         /* endonly3 */
         }   
         
-        .item--db {
-        /* only1 */
-            float: right;
-            margin-left: 20px;
-        /* endonly1 */
-        /* until2 */
-            width: 590px;
-            height: 300px;
-            margin-top: 20px;
-        /* enduntil2 */
+        .item__db {
         /* only3 */
             grid-column: span 2;
         /* endonly3 */

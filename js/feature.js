@@ -38,14 +38,7 @@ const css = `
         /* only1 */
             display: inline-block;
         /* endonly1 */
-            margin-left: 15px;
             vertical-align: middle;
-        }
-        /* enduntil2 */
-        
-        /* until2 */
-        .feature__text {
-            margin: 0 0 0 50px;
         }
         /* enduntil2 */
 `;

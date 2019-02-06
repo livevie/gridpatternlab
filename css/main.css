@@ -409,11 +409,11 @@ input[type=radio]:checked + label:after {
 
 /*Column as wide as widest child*/
 
-.description-list > span {
+.description__list > span {
     border: 1px dotted #1F5680;
 }
 
-.description-list > span:nth-child(odd) {
+.description__list > span:nth-child(odd) {
     color: #1F5680;
 }
 
@@ -424,22 +424,25 @@ input[type=radio]:checked + label:after {
     color: white;
 }
 
-.item--sm {
+.item__sm {
     background-image: url(https://source.unsplash.com/UCIZh0-OYPw);
     background-size: cover;
+    background-position: center;
 }
 
-.item--sm:nth-child(2) {
+.item__sm:nth-child(2) {
     background-image: url(https://source.unsplash.com/Ic0q_M542Is);
     background-size: cover;
+    background-position: center;
 }
 
-.item--lg {
+.item__lg {
     background-image: url(https://source.unsplash.com/U_D5NWMmTTM);
     background-size: cover;
+    background-position: center;
 }
 
-.item--db {
+.item__db {
     background-image: url(https://source.unsplash.com/uCTlqRpsv5c);
     background-size: cover;
 }

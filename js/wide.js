@@ -4,27 +4,40 @@ const support = [
     'Firefox 52+, Chrome 57+, Edge 16+, Safari 10.1'
 ];
 const css = `
-        .description-list {
+        .description__list {
         /* only2 */
             display: flex;
-            flex-flow: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
         /* endonly2 */
         /* only3 */
             display: grid;
-            grid-template-columns: minmax(auto, max-content);
+            grid-template-columns: minmax(auto, max-content) 1fr;
             grid-gap: 10px;
         /* endonly3 */
         }
         
+        /* only1 */
+        .description__list::after {
+            content: "";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            height: 0;
+        }
+        /* endonly1 */
+        
         /* until2 */
-        .description-item {
+        .description__item {
             margin-bottom: 10px;
+            width: 49%;
         }
         /* enduntil2 */
         
         /* only1 */
-        .description-item {
-            display: block;
+        .description__item {
+            float: left;
+            margin-right: 1%;
         }
         /* endonly1 */
 `;
