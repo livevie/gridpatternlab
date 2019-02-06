@@ -59,6 +59,11 @@ function displayCSS(string, support, element = '.js-css-display') {
  * @param {int} index
  * Support text anzeigen
  */
+
+// Anzahl der Steps festlegen
+
+support_slider.setAttribute('max', support.length);
+
 function displaySupport(index) {
   support_text.textContent = support[index - 1];
 }
