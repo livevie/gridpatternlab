@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/main.css" rel="stylesheet" />
+    <link href="node_modules/fr-tabs/tabs.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title>Component | Wrapper</title>
 </head>
@@ -45,7 +46,28 @@
         </div>
 
         <h2>Code</h2>
-        <div class="css js-css-display"></div>
+        <div class="fr-tabs js-fr-tabs">
+            <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+                <li class="fr-tabs__tablist-item">
+                    <a class="fr-tabs__tab" id="tab1" href="#panel1">CSS</a>
+                </li>
+                <li class="fr-tabs__tablist-item">
+                    <a class="fr-tabs__tab" id="tab2" href="#panel2">HTML</a>
+                </li>
+            </ul>
+            <section class="fr-tabs__panel js-fr-tabs__panel" id="panel1">
+                <div class="css js-css-display"></div>
+            </section>
+            <section class="fr-tabs__panel js-fr-tabs__panel" id="panel2">
+                <div class="html">&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;item item__lg&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;item item__sm&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;item item__sm&quot;&gt;3&lt;/div&gt;
+    &lt;div class=&quot;item item__db&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;
+                </div>
+            </section>
+        </div>
 
         <h2>Component</h2>
 
@@ -85,5 +107,7 @@
 <script src="js/cssbeautify.js"></script>
 <script src="js/aspectratio.js"></script>
 <script src="js/renderComponent.js"></script>
+<script src="node_modules/fr-tabs/dist/frtabs.min.js"></script>
+<script src="js/frTabs.js"></script>
 </body>
 </html>

@@ -322,12 +322,11 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 /*Contenteditable*/
-.css {
+.css, .html {
     display: block;
     background: #333;
     color: #FFF;
     padding: 2rem;
-    margin: 2rem 0;
     font-family: "Courier New", monospace;
     white-space: pre-wrap;
 }
@@ -392,6 +391,41 @@ input[type=radio]:checked + label:after {
             4px -6px 0 white,
             4px -8px 0 white;
     transform: rotate(45deg);
+}
+
+/*Frend Tabs*/
+
+.fr-tabs__tab {
+    color: #fff;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1.25;
+    text-decoration: none;
+}
+
+.fr-tabs--is-ready .fr-tabs__tab[tabindex="0"] {
+    background-color: #333;
+}
+
+.fr-tabs--is-ready .fr-tabs__tab {
+    background-color: #565050;
+    border-radius: .25em .25em 0 0;
+    padding: 1em 1.25em;
+    text-transform: uppercase;
+    transition: background-color .15s ease-out,color .15s ease-out;
+}
+
+.fr-tabs--is-ready .fr-tabs__panel {
+    background-color: #333;
+}
+
+.fr-tabs__panel {
+    margin: 0 0 4rem 0;
+    font-family: "Courier New", monospace;
+}
+
+.fr-tabs__panel p {
+    color: #fff;
 }
 
 

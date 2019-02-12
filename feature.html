@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/main.css" rel="stylesheet" />
+    <link href="node_modules/fr-tabs/tabs.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <title>Component | Feature Box</title>
 </head>
@@ -45,7 +46,35 @@
         </div>
 
         <h2>Code</h2>
-        <div class="css js-css-display"></div>
+        <div class="fr-tabs js-fr-tabs">
+            <ul class="fr-tabs__tablist js-fr-tabs__tablist">
+                <li class="fr-tabs__tablist-item">
+                    <a class="fr-tabs__tab" id="tab1" href="#panel1">CSS</a>
+                </li>
+                <li class="fr-tabs__tablist-item">
+                    <a class="fr-tabs__tab" id="tab2" href="#panel2">HTML</a>
+                </li>
+            </ul>
+            <section class="fr-tabs__panel js-fr-tabs__panel" id="panel1">
+                <div class="css js-css-display"></div>
+            </section>
+            <section class="fr-tabs__panel js-fr-tabs__panel" id="panel2">
+                <div class="html">&lt;div class=&quot;feature&quot;&gt;
+    &lt;svg class=&quot;feature__icon&quot;&gt;&lt;use xlink:href=&quot;#icon-location&quot;&gt;&lt;/use&gt;&lt;defs&gt;&lt;symbol id=&quot;icon-location&quot; viewBox=&quot;0 0 32
+    32&quot;&gt;
+    &lt;title&gt;location&lt;/title&gt;
+    &lt;path d=&quot;M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16c-3.314 0-6-
+    2.686-6-6s2.686-6 6-6 6 2.686 6 6-2.686 6-6 6z&quot;&gt;&lt;/path&gt;
+    &lt;/symbol&gt;
+    &lt;/defs&gt;
+    &lt;/svg&gt;
+    &lt;h4 class=&quot;heading&quot;&gt;Feature Section&lt;/h4&gt;
+    &lt;p class=&quot;feature__text&quot;&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur distinctio
+    necessitatibus pariatur voluptatibus.&lt;/p&gt;
+&lt;/div&gt;
+                </div>
+            </section>
+        </div>
 
         <h2>Component</h2>
         <div class="js-support-toggle">
@@ -86,5 +115,7 @@
 <script src="js/cssbeautify.js"></script>
 <script src="js/feature.js"></script>
 <script src="js/renderComponent.js"></script>
+<script src="node_modules/fr-tabs/dist/frtabs.min.js"></script>
+<script src="js/frTabs.js"></script>
 </body>
 </html>
