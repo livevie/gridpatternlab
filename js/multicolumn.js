@@ -28,7 +28,7 @@ const css = `
         /* endonly1 */
         
         /* until2 */
-        .multicolum-element {
+        .multicolumn__element {
             width: 250px;
         /* only1 */
             float: left;
