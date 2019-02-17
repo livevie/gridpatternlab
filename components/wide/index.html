@@ -5,16 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/main.css" rel="stylesheet" />
-    <link href="node_modules/fr-tabs/tabs.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet" />
+    <link href="../../node_modules/fr-tabs/tabs.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <title>Component | Gallery</title>
+    <title>Component | Wrapper</title>
 </head>
 <body>
 
 <header class="header">
     <div class="navigation wrapper--base">
-        <a href="index.html" class="logo logo__white">GridPatternLab</a>
+        <a href="../../index.html" class="logo logo__white">GridPatternLab</a>
         <nav class="site-nav">
             <ul>
                 <li><a class="btn-help" href="#">Need Help?</a></li>
@@ -23,8 +23,8 @@
         </nav>
         <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary--main">component/gallery</span>
-                <span class="heading-primary--sub">Responsive image gallery</span>
+                <span class="heading-primary--main">component/content dependent column</span>
+                <span class="heading-primary--sub">Column as wide as widest child item content</span>
             </h1>
         </div>
     </div>
@@ -36,15 +36,15 @@
             <h2>Component Description</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
         </div>
-        
-        
+
+
         <div class="support">I have to support:<br />
             <span class="js-support"></span>
             <div>
                 <input type="range" name="" id="" min="1" max="3" step="1" value="3" class="js-support-selection">
             </div>
         </div>
-        
+
         <h2>Code</h2>
         <div class="fr-tabs js-fr-tabs">
             <ul class="fr-tabs__tablist js-fr-tabs__tablist">
@@ -59,37 +59,43 @@
                 <div class="css js-css-display"></div>
             </section>
             <section class="fr-tabs__panel js-fr-tabs__panel" id="panel2">
-                <div class="html">&lt;div class=&quot;gallery&quot;&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;photo&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</div>
+                <div class="html">&lt;div class=&quot;description__list&quot;&gt;
+    &lt;span class=&quot;description__item&quot;&gt;Question: Can you tell me a little about yourself ?&lt;/span&gt;
+    &lt;span class=&quot;description__item&quot;&gt;Answer: I&apos;m a 27 year old student and love reading books&lt;/span&gt;
+
+    &lt;span class=&quot;description__item&quot;&gt;Question: Where do you live ?&lt;/span&gt;
+    &lt;span class=&quot;description__item&quot;&gt;Answer: I live in Vienna, Austria&lt;/span&gt;
+
+    &lt;span class=&quot;description__item&quot;&gt;Question: What&apos;s your favorite food ?&lt;/span&gt;
+    &lt;span class=&quot;description__item&quot;&gt;Answer: Pizza&lt;/span&gt;
+
+    &lt;span class=&quot;description__item&quot;&gt;Question: Favorite Book ?&lt;/span&gt;
+    &lt;span class=&quot;description__item&quot;&gt;Answer: Harry Potter&lt;/span&gt;
+&lt;/div&gt;
+                </div>
             </section>
         </div>
 
         <h2>Component</h2>
+
+        <div class="note">Note: This column behaviour is only possible with css grid without setting a fixed width.</div>
+
         <div class="js-support-toggle">
             <p>Toggle the checkboxes to see how the component looks like in …</p>
         </div>
-        
-        <div class="gallery">
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
-            <div class="photo"></div>
+
+        <div class="description__list">
+            <span class="description__item">Question: Can you tell me a little about yourself ?</span>
+            <span class="description__item">Answer: I'm a 27 year old student and love reading books</span>
+
+            <span class="description__item">Question: Where do you live ?</span>
+            <span class="description__item">Answer: I live in Vienna, Austria</span>
+
+            <span class="description__item">Question: What's your favorite food ?</span>
+            <span class="description__item">Answer: Pizza</span>
+
+            <span class="description__item">Question: Favorite Book ?</span>
+            <span class="description__item">Answer: Harry Potter</span>
         </div>
 
         <style class="js-css-rendered"></style>
@@ -108,14 +114,14 @@
             <a href="#">Terms & Privacy</a>
         </div>
         <div class="footer__social">
-            <a href="https://github.com/livevie/gridpatternlab"><img src="img/github.svg" alt="Github Icon"></a>
+            <a href="https://github.com/livevie/gridpatternlab"><img src="../../img/github.svg" alt="Github Icon"></a>
         </div>
     </div>
 </footer>
-<script src="js/cssbeautify.js"></script>
-<script src="js/gallery.js"></script>
-<script src="js/renderComponent.js"></script>
-<script src="node_modules/fr-tabs/dist/frtabs.min.js"></script>
-<script src="js/frTabs.js"></script>
+<script src="../../js/cssbeautify.js"></script>
+<script src="../../js/wide.js"></script>
+<script src="../../js/renderComponent.js"></script>
+<script src="../../node_modules/fr-tabs/dist/frtabs.min.js"></script>
+<script src="../../js/frTabs.js"></script>
 </body>
 </html>

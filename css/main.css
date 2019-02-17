@@ -60,10 +60,13 @@ h2 {
 }
 
 .note {
-    background-color: indianred;
+    background-color: #c1ab58;
     padding: 20px;
     color: #fff;
+    text-shadow: 1px 1px 0 #000;
     margin-bottom: 2rem;
+    font-size: 18px;
+    text-align: center;
 }
 
 /*Header*/
