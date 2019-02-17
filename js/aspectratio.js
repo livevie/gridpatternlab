@@ -42,7 +42,7 @@ const css = `
         /* until2 */
         .item {
             width: 49%;
-            height: 620px;
+            height: 300px;
             margin-bottom: 20px;
             /* only1 */
             float: left;
