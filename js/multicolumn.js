@@ -17,6 +17,14 @@ const css = `
         /* endonly3 */
         }
         
+        /* only3 */
+         @media screen and (max-width: 768px) {
+         .multicolumn__elements {
+                grid-auto-flow: row;
+            }
+        }
+        /* endonly3 */
+        
         /* only1 */
         .multicolumn__elements::after {
             content: "";
