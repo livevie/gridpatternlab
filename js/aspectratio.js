@@ -20,7 +20,7 @@ const css = `
         }
         
         /* only3 */
-         @media screen and (max-width: 600px) {
+         @media screen and (max-width: 768px) {
          .container {
                 grid-auto-rows: auto;
                 grid-gap: 5px;
@@ -61,7 +61,7 @@ const css = `
         /* enduntil2 */
         
         /* until2 */
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             .item {
                 width: 100%;
                 /* only1 */

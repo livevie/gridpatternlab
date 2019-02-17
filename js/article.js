@@ -16,6 +16,22 @@ const css = `
         /* endonly3 */
         }
         
+        /* only2 */
+        @media screen and (max-width: 768px) {
+             .article {
+                flex-wrap: wrap;
+            }
+        }
+        /* endonly2 */
+        
+        /* only3 */
+        @media screen and (max-width: 768px) {
+             .article {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* endonly3 */
+        
         /* only1 */
         .article::after {
             content: "";
@@ -38,6 +54,14 @@ const css = `
         /* endonly3 */
         }
         
+        /* until2 */
+        @media screen and (max-width: 768px) {
+             .article__media {
+                width: 100%;
+            }
+        }
+        /* enduntil2 */
+        
         .article__text {
         /* only1 */
             float: right;
@@ -49,6 +73,14 @@ const css = `
             grid-column: span 6;
         /* endonly3 */
         }
+        
+        /* until2 */
+        @media screen and (max-width: 768px) {
+             .article__text {
+                width: 100%;
+            }
+        }
+        /* enduntil2 */
         
         img {
             width: 100%;
