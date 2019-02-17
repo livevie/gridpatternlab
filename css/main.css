@@ -239,6 +239,9 @@ h2 {
 /*Landingpage Content Boxes*/
 
 .section__landing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
@@ -246,8 +249,13 @@ h2 {
 
 @media screen and (max-width: 600px) {
     .section__landing {
-        grid-template-columns: 1fr;
         text-align: center;
+    }
+    @supports (display: grid) {
+        .section__landing {
+            grid-template-columns: 1fr;
+            text-align: center;
+        }
     }
 }
 
@@ -264,11 +272,25 @@ h2 {
 .component_box, .component_box:link, .component_box:visited {
     color: #0F3458;
     background-color: #EAF1EE;
-    width: 100%;
     padding: 20px;
+    width: 49%;
+    margin-bottom: 25px;
     border-radius: 10px;
     border: 1px solid #bed1d1;
     transition: all 0.2s;
+}
+
+@supports (display: grid) {
+    .component_box, .component_box:link, .component_box:visited {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .component_box, .component_box:link, .component_box:visited {
+        width: 100%;
+    }
 }
 
 .component_box:hover {
