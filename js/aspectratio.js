@@ -19,6 +19,15 @@ const css = `
         /* endonly3 */
         }
         
+        /* only3 */
+         @media screen and (max-width: 600px) {
+         .container {
+                grid-auto-rows: auto;
+                grid-gap: 5px;
+            }
+        }
+        /* endonly3 */
+        
         /* only1 */
         .container::after {
             content: "";
@@ -46,8 +55,19 @@ const css = `
             margin-bottom: 20px;
             /* only1 */
             float: left;
-            margin-right: 10px;
+            margin-right: 5px;
             /* endonly1 */
+        }
+        /* enduntil2 */
+        
+        /* until2 */
+        @media screen and (max-width: 600px) {
+            .item {
+                width: 100%;
+                /* only1 */
+                margin-right: 0;
+                /* endonly1 */
+            }
         }
         /* enduntil2 */
         
