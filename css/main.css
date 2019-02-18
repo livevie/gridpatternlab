@@ -297,6 +297,28 @@ h2 {
     background-color: #fff;
 }
 
+/* Component Img Description*/
+
+.description__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.description__img > .img__behavior {
+    width: 49%;
+    margin-top: 2rem;
+}
+
+.description__img > .img__behavior > span {
+    color: indianred;
+}
+
+.description__img > .img__behavior > img {
+    width: 100%;
+}
+
 /*Support Range*/
 
 .support {

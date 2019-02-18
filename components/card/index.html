@@ -8,7 +8,7 @@
     <link href="../../css/main.css" rel="stylesheet" />
     <link href="../../node_modules/fr-tabs/tabs.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <title>Component | Article</title>
+    <title>Component | Card</title>
 </head>
 <body>
 
@@ -23,8 +23,8 @@
         </nav>
         <div class="header__text-box">
             <h1 class="heading-primary">
-                <span class="heading-primary--main">component/article section</span>
-                <span class="heading-primary--sub">Article section</span>
+                <span class="heading-primary--main">component/card</span>
+                <span class="heading-primary--sub">Responsive Card</span>
             </h1>
         </div>
     </div>
@@ -35,6 +35,20 @@
         <div class="description">
             <h2>Component Description</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
+            <div class="description__img">
+                <div class="img__behavior">
+                    <span>Image, Header, Description</span>
+                    <img src="/img/card_behavior2.png" alt="Card Behavior">
+                </div>
+                <div class="img__behavior">
+                    <span>Changed order of elements without changing the HTML markup with CSS Grid: Header, Image, Description</span>
+                    <img src="/img/card_behavior1.png" alt="Card Behavior">
+                </div>
+                <div class="img__behavior">
+                    <span>Without CSS Grid: Image, Header, Description</span>
+                    <img src="/img/card_behavior3.png" alt="Card Behavior">
+                </div>
+            </div>
         </div>
 
 
@@ -59,43 +73,32 @@
                 <div class="css js-css-display"></div>
             </section>
             <section class="fr-tabs__panel js-fr-tabs__panel" id="panel2">
-                <div class="html">&lt;div class=&quot;container&quot;&gt;
-    &lt;article class=&quot;article&quot;&gt;
-        &lt;figure class=&quot;article__media&quot;&gt;
-            &lt;img src=&quot;https://source.unsplash.com/Y3PD_9c2xms&quot; alt=&quot;Mountains&quot; /&gt;
-        &lt;/figure&gt;
-        &lt;div class=&quot;article__text&quot;&gt;
-            &lt;h3&gt;Article Headline&lt;/h3&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Morbi tincidunt ornare massa eget egestas purus viverra. Elementum integer enim neque
-            volutpat ac tincidunt vitae semper quis. Dictum varius duis at consectetur lorem donec massa sapien.
-            Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Ultrices eros in cursus turpis massa
-            tincidunt dui. Quis risus sed vulputate odio. Sodales ut etiam sit amet nisl purus in. Libero justo
-            laoreet sit amet cursus sit amet dictum. Donec adipiscing tristique risus nec feugiat. Bibendum ut
-            tristique et egestas quis ipsum suspendisse ultrices.&lt;/p&gt;
-        &lt;/div&gt;
+                <div class="html">&lt;section&gt;
+    &lt;article class=&quot;card&quot;&gt;
+        &lt;figure class=&quot;card__img&quot;&gt;&lt;img src=&quot;https://source.unsplash.com/Fkc2KrT_5cA&quot; alt=&quot;&quot;&gt;&lt;/figure&gt;
+        &lt;h3 class=&quot;card__header&quot;&gt;Header&lt;/h3&gt;
+        &lt;p class=&quot;card__description&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p&gt;
     &lt;/article&gt;
-&lt;/div&gt;
+&lt;/section&gt;
                 </div>
             </section>
         </div>
 
         <h2>Component</h2>
+        <div class="note">Note: This behaviour is only possible with css grid without changing the HTML Markup or using JavaScript.</div>
+
         <div class="js-support-toggle">
             <p>Toggle the checkboxes to see how the component looks like in …</p>
         </div>
 
-        <div class="container">
-            <article class="article">
-                <figure class="article__media">
-                    <img src="https://source.unsplash.com/Y3PD_9c2xms" alt="Mountains" />
-                </figure>
-                <div class="article__text">
-                    <h3>Article Headline</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt ornare massa eget egestas purus viverra. Elementum integer enim neque volutpat ac tincidunt vitae semper quis. Dictum varius duis at consectetur lorem donec massa sapien. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Ultrices eros in cursus turpis massa tincidunt dui. Quis risus sed vulputate odio. Sodales ut etiam sit amet nisl purus in. Libero justo laoreet sit amet cursus sit amet dictum.</p>
-                </div>
+        <section>
+            <article class="card">
+                <figure class="card__img"><img src="https://source.unsplash.com/Fkc2KrT_5cA" alt=""></figure>
+                <h3 class="card__header">Header</h3>
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </article>
-        </div>
+        </section>
 
         <style class="js-css-rendered"></style>
     </section>
@@ -118,7 +121,7 @@
     </div>
 </footer>
 <script src="../../js/cssbeautify.js"></script>
-<script src="../../js/article.js"></script>
+<script src="../../js/card.js"></script>
 <script src="../../js/renderComponent.js"></script>
 <script src="../../node_modules/fr-tabs/dist/frtabs.min.js"></script>
 <script src="../../js/frTabs.js"></script>
