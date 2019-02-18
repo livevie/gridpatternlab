@@ -8,7 +8,7 @@ const css = `
         /* only2 */
             display: flex;
             flex-wrap: wrap;
-        justify-content: space-between;
+            justify-content: space-between;
         /* endonly2 */
         /* only3 */
             display: grid;
@@ -22,21 +22,11 @@ const css = `
         /* only3 */
          @media screen and (max-width: 768px) {
          .container {
-                grid-auto-rows: auto;
+                grid-auto-rows: 100px;
                 grid-gap: 5px;
             }
         }
         /* endonly3 */
-        
-        /* only1 */
-        .container::after {
-            content: "";
-            display: block;
-            clear: both;
-            visibility: hidden;
-            height: 0;
-        }
-        /* endonly1 */
         
         /* only1 */
         .container::after {

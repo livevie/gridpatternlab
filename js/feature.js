@@ -33,12 +33,9 @@ const css = `
         }
         /* enduntil3 */
         
-        /* until2 */
-        .heading {
         /* only1 */
+        .feature__header {
             display: inline-block;
-        /* endonly1 */
-            vertical-align: middle;
         }
-        /* enduntil2 */
+        /* endonly1 */
 `;

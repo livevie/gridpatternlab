@@ -6,10 +6,7 @@ const css = `
         .wrapper {
         /* until1 */
             max-width: 960px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-            margin-right: auto;
-            margin-left: auto;
+            margin: 0 auto;
             position: relative;
         /* enduntil1 */
         /* only2 */

@@ -37,7 +37,7 @@ const css = `
         /* only1 */
         .description__item {
             float: left;
-            margin-right: 1%;
+            margin-right: 10px;
         }
         /* endonly1 */
 `;

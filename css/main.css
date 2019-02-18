@@ -506,7 +506,6 @@ input[type=radio]:checked + label:after {
 /*Aspect Ratio Box */
 
 .item {
-    padding: 20px;
     color: white;
 }
 

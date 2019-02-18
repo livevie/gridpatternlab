@@ -54,14 +54,6 @@ const css = `
         /* endonly3 */
         }
         
-        /* until2 */
-        @media screen and (max-width: 768px) {
-             .article__media {
-                width: 100%;
-            }
-        }
-        /* enduntil2 */
-        
         .article__text {
         /* only1 */
             float: right;
@@ -76,7 +68,7 @@ const css = `
         
         /* until2 */
         @media screen and (max-width: 768px) {
-             .article__text {
+             .article__media, .article__text {
                 width: 100%;
             }
         }

@@ -29,23 +29,13 @@ const css = `
         }
         /* endonly2 */
         
-        /* only1 */
-         @media screen and (max-width: 768px) {
-         .card {
-            display: block;
-            }
-        }
-        /* endonly1 */
-       
-        
-        
         .card__img {
         /* only2 */
           grid-area: photo;
         /* endonly2 */
          }
          
-        .card__header {/
+        .card__header {
         /* only2 */
           grid-area: header;
         /* endonly2 */

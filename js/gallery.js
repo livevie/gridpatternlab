@@ -28,19 +28,18 @@ const css = `
         }
         /* endonly1 */
         
-        /* only1 */
         .photo {
-            float: left;
-        }
-        /* endonly1 */
-        
+        background-image: url(https://source.unsplash.com/tvleqH3p1os);
+        background-size: cover;
         /* until2 */
-        .photo {
             width: 250px;
             height: 200px;
             margin: 10px;
-        }
         /* enduntil2 */
+        /* only1 */
+            float: left;
+        /* endonly1 */
+        }
         
         /* only2 */
         @supports (display: grid) {
@@ -51,9 +50,4 @@ const css = `
         }
         }
         /* endonly2 */
-        
-        .photo {
-            background-image: url(https://source.unsplash.com/tvleqH3p1os);
-            background-size: cover;
-        }
 `;
