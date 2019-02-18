@@ -51,4 +51,9 @@ const css = `
         }
         }
         /* endonly2 */
+        
+        .photo {
+            background-image: url(https://source.unsplash.com/tvleqH3p1os);
+            background-size: cover;
+        }
 `;

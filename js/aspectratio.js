@@ -71,7 +71,22 @@ const css = `
         }
         /* enduntil2 */
         
+        .item__sm {
+            background-image: url(https://source.unsplash.com/UCIZh0-OYPw);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item__sm:nth-child(2) {
+            background-image: url(https://source.unsplash.com/Ic0q_M542Is);
+            background-size: cover;
+            background-position: center;
+        }
+        
         .item__lg {
+        background-image: url(https://source.unsplash.com/U_D5NWMmTTM);
+        background-size: cover;
+        background-position: center;
         /* only3 */
             grid-column: span 2;
             grid-row: span 2;
@@ -79,8 +94,11 @@ const css = `
         }   
         
         .item__db {
+            background-image: url(https://source.unsplash.com/uCTlqRpsv5c);
+            background-size: cover;
         /* only3 */
             grid-column: span 2;
         /* endonly3 */
-        }  
+        }
+
 `;
