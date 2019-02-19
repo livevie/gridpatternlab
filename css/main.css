@@ -269,6 +269,21 @@ h2 {
     }
 }
 
+.description__help {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .description__help {
+        margin: 2rem 0;
+    }
+}
+
+.description__help > h3 {
+    margin: 2rem 0 0;
+}
+
 .component_box, .component_box:link, .component_box:visited {
     color: #0F3458;
     background-color: #EAF1EE;
