@@ -43,11 +43,11 @@ const css = `
         
         /* only2 */
         @supports (display: grid) {
-        .photo {
-            width: auto;
-            height: auto;
-            margin: 0;
-        }
+            .photo {
+                width: auto;
+                height: auto;
+                margin: 0;
+            }
         }
         /* endonly2 */
 `;
