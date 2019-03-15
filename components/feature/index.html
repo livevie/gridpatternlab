@@ -35,7 +35,9 @@
     <section class="section__gallery">
         <div class="description">
             <h2>Component Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
+            <p>Creating a feature box with <code>display: flex</code> or <code>display: inline-block</code> is a little bit tricky. In this component the headline <strong>"Feature Section"</strong> and the paragraph <strong>"Lorem, ipsum dolor ..."</strong> should be positioned in one line. Without giving the paragraph a margin or a padding it's impossible. Here you have to work pixel-precisely.
+                <br><br>
+                CSS Grid makes it possible to work without such hacks. With a fixed size and the definition of <code>grid-template-columns</code> to the feature container. Here you define the size of the columns in which the elements are located and define the distance to each other with <code>grid-gap</code>. Margins and paddings are no longer needed.</p>
         </div>
 
 

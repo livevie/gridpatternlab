@@ -42,6 +42,8 @@ function trim_comments(string) {
  * CSS passend zur Auswahl anzeigen
  */
 function displayCSS(string, support, element = '.js-css-display') {
+  // CSS ohne Kommentare anzeigen
+  document.querySelector(element).innerHTML = trim_comments(string);
 
   // Kommentare durchgehen
   for (var i = 1; i < parseInt(support); i++) {

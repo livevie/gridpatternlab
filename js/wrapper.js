@@ -4,11 +4,11 @@ const support = [
 ];
 const css = `
         .wrapper {
-        /* until1 */
+        /* only1 */
             max-width: 960px;
             margin: 0 auto;
             position: relative;
-        /* enduntil1 */
+        /* endonly1 */
         /* only2 */
             display: grid;
             grid-template-columns: 1fr [content] minmax(auto, 960px) 1fr;

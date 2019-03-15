@@ -35,7 +35,9 @@
     <section class="section__gallery">
         <div class="description">
             <h2>Component Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
+            <p>The gallery component should be easy to implement with <code>display: flex</code> or <code>display: inline-block</code>. But it's not. For both solutions an additional margin is required, which has to be the same on all sides to create a distance between the gallery images. However, there is also a mandatory gap at the edges, which is often undesirable. In addition, in the case of inline block elements, they interpret
+                <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/" target="_blank">white-space in the markup</a> in a way that introduces extra unwanted space between each item. You can get rid of this extra spaces, but you’ll have to implement one of several workarounds.<br><br>
+            CSS Grid has the perfect solution for this problems: adding <code>grid-gap</code> to the component container. This solution creates space only between the individual elements.</p>
         </div>
         
         

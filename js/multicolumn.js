@@ -11,19 +11,11 @@ const css = `
         /* endonly2 */
         /* only3 */
             display: grid;
-            grid-auto-columns: minmax(auto,250px);
+            grid-template-columns: auto;
             grid-auto-flow: column;
             grid-template-rows: repeat(5,auto);
         /* endonly3 */
         }
-        
-        /* only3 */
-         @media screen and (max-width: 768px) {
-         .multicolumn__elements {
-                grid-auto-flow: row;
-            }
-        }
-        /* endonly3 */
         
         /* only1 */
         .multicolumn__elements::after {
@@ -39,7 +31,7 @@ const css = `
         .multicolumn__element {
             width: 250px;
         /* only1 */
-            float: left;
+            display: inline-block;
         /* endonly1 */
         }
         /* enduntil2 */

@@ -35,7 +35,12 @@
     <section class="section__gallery">
         <div class="description">
             <h2>Component Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
+            <p>Creating a wrapper component is essential for a website, because all the elements a website should represent shouldn't stick to the ends of a viewport. To give each element a margin or padding makes little sense and is prone to errors.<br><br>
+                In this case there are two possibilities:<br>
+                The first one is to create a wrapper class with the desired width and place this class in every HTML container element that should be aligned inside the wrapper.<br><br>
+                The second one is working with CSS Grid. You define the <code>grid-template-columns</code> in the desired number of columns once. For a web page wrapper there are in this case 3 columns: <code>grid-template-columns: 1fr [setAnyName] minmax(auto, 960px) 1fr;</code> The first and last column take the available space and the named grid area <strong>[setAnyName]</strong> defines the wrapper with 960px width. Finally, you pass the desired HTML elements/classes in the stylesheet
+                <code>grid-column-start: setAnyName</code> to align it in the wrapper.</p>
+
         </div>
 
 

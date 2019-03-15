@@ -43,6 +43,13 @@ section {
     }
 }
 
+code {
+    font-family: "Ubuntu Mono", monospace;
+    background-color: rgba(24, 54, 77, 0.1);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
 h2 {
     margin-bottom: 1rem;
 }

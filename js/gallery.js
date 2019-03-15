@@ -37,7 +37,7 @@ const css = `
             margin: 10px;
         /* enduntil2 */
         /* only1 */
-            float: left;
+            display: inline-block;
         /* endonly1 */
         }
         

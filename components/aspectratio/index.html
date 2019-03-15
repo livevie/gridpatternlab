@@ -35,7 +35,11 @@
     <section class="section__gallery">
         <div class="description">
             <h2>Component Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
+            <p>This aspect ratio boxes layout based on equal sized square grid cells, where grid items could span one or two cells on the row and/or column axis. In other words, the grid cells needed to maintain an aspect ratio (1:1 in this case), but the actual grid items did not necessarily.<br><br>
+                Doing Components like this involves trickery with padding such that an element's width and height are in proportion to your need, but it's possible with CSS Grid.<br><br>
+                Here we’re going to use <code>grid-template-columns</code> and <code>grid-auto-rows</code> to define our grid. <code>grid-auto-rows</code> is a useful alternative to <code>grid-template-rows</code> for defining implicitly created grid tracks for the case we don't know how many rows there will be, but we want them all to be the same height.<br><br>
+                In this particular grid we can let CSS Grid’s auto placement algorithm do some of the work. The small grid items should span a single cell and follow the normal flow. The large grid items should span two tracks in either direction.<br><br>
+                If you want the rest of the items to fill in any spaces you can use <code>grid-auto-flow: dense;</code> on the grid container, otherwise any subsequent items will simply take the next place in the flow.</p>
         </div>
 
 

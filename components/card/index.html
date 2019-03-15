@@ -35,15 +35,20 @@
     <section class="section__gallery">
         <div class="description">
             <h2>Component Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet. Feugiat nisl pretium fusce id velit ut. Adipiscing tristique risus nec feugiat in fermentum posuere urna. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero nunc consequat interdum varius sit amet. Placerat vestibulum lectus mauris ultrices eros in cursus turpis massa. Fusce ut placerat orci nulla pellentesque dignissim enim. Posuere morbi leo urna molestie at. Aliquet enim tortor at auctor urna nunc id cursus. Turpis massa tincidunt dui ut. Elementum eu facilisis sed odio morbi quis. Amet consectetur adipiscing elit ut aliquam purus. Orci porta non pulvinar neque laoreet suspendisse. Ut eu sem integer vitae justo eget.</p>
+            <p>This card component shows another strength of CSS Grid. Depending on the size of the viewport, the display of the component is changed without attacking the markup.  This only works with the definition of grid-template-areas.<br><br>
+                The card component gets a 3 column grid and is defined with the following areas: <strong>"photo", "header" and "description"</strong>. To display the image <i>left</i> and header/description <i>right</i> for a big viewport, the card container must display the areas as follows: <code>grid-template-areas: "photo header header" "photo description description";</code>. 1 column and 2 rows for the image, 2 columns and 2 rows for the header and the description.<br><br>
+                This behaviour can also be easily simulated with <code>display: flex</code> or <code>float</code>. But what to do if on mobile phones or tablets the elements should be positioned differently? Without JavaScript this was not possible.<br><br>
+                <code>grid-template-areas</code> makes this possible. You redefine the areas in the desired viewport size. In this case, with a viewport size of 768px, the areas are displayed as follows: <code>grid-template-areas: "header header header" "photo photo photo" "description" "description" "description" ;</code>. <br><br>
+                This is a simple and elegant solution to avoid manipulating the HTML markup with JavaScript.</p>
+
             <div class="description__img">
                 <div class="img__behavior">
-                    <span>HTML Markup order: Header, Image, Description</span>
-                    <img src="/img/card_behavior1.png" alt="Card Behavior">
+                    <span>HTML Markup order:<br><br> Image, Header, Description</span>
+                    <img src="/img/card_behavior2.png" alt="Card Behavior">
                 </div>
                 <div class="img__behavior">
-                    <span>Changed order of elements without changing the HTML markup with CSS Grid to: Image, Header, Description</span>
-                    <img src="/img/card_behavior2.png" alt="Card Behavior">
+                    <span>Changed order of elements without changing the HTML markup with <code>grid-template-areas</code> to:<br> Header, Image, Description</span>
+                    <img src="/img/card_behavior1.png" alt="Card Behavior">
                 </div>
             </div>
         </div>
@@ -91,8 +96,8 @@
 
         <section>
             <article class="card">
-                <h3 class="card__header">Header</h3>
                 <figure class="card__img"><img src="https://source.unsplash.com/Fkc2KrT_5cA" alt=""></figure>
+                <h3 class="card__header">Header</h3>
                 <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </article>
         </section>
