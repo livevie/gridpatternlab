@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+a:link, a:visited {
+    color: #c1ab58;
+}
+
 p {
     font-size: 16px;
     color: #000;
@@ -204,6 +208,14 @@ h2 {
     font-weight: 700;
 }
 
+.logo__white:link, .logo__white:visited {
+    color: white;
+}
+
+.logo__black:link, .logo__black:visited {
+    color: black;
+}
+
 .btn-help {
     background-color: #1F5680;
     margin-right: 15px;
@@ -270,6 +282,16 @@ h2 {
 
 .description__landing {
     margin-top: 4rem;
+}
+
+.description__landing > .note {
+    background-color: #567385;
+    padding: 20px;
+    color: #fff;
+    text-shadow: none;
+    margin: 2rem 0;
+    font-size: 18px;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px) {
